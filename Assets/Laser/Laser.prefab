@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserSpeed: 400
+  projectileBias: 5
 --- !u!114 &3761785100394893570
 MonoBehaviour:
   m_ObjectHideFlags: 0
