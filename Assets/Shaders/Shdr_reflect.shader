@@ -44,7 +44,7 @@
 		float _Transparency;
 		float _ImpactIntensity;
 		int _ShieldPointSize;
-		fixed4 _ShieldPoints[50];
+		fixed4 _ShieldPoints[100];
 
 		void vert(inout appdata_full input, out Input o) {
 			float4 pos = UnityObjectToClipPos(input.vertex);

@@ -6,6 +6,7 @@ public class LaserMovementBehaviour : MonoBehaviour
 {
     public float laserSpeed = 400.0f;
     public float projectileBias = 10.0f;
+    public float deleteDelay = 0.01f; 
 
     void Update()
     {
@@ -19,7 +20,13 @@ public class LaserMovementBehaviour : MonoBehaviour
         if(Physics.Raycast(ray, out hit, distance + projectileBias))
         {
             hit.collider.SendMessage("OnProjectileHit", hit.point, SendMessageOptions.DontRequireReceiver);
-            Destroy(gameObject);
+            StartCoroutine(deleteAfterDelay(deleteDelay)); 
         }
+    }
+
+    IEnumerator deleteAfterDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject); 
     }
 }

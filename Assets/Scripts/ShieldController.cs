@@ -89,4 +89,9 @@ public class ShieldController : MonoBehaviour
         Vector4 impactPoint = new Vector4(inc_impactPoint.x, inc_impactPoint.y, inc_impactPoint.z, 0);
         shieldPointsToRender.Add(impactPoint);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(collision.gameObject); 
+    }
 }
