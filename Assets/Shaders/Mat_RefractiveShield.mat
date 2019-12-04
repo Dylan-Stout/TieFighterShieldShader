@@ -30,4 +30,4 @@ Material:
     - _RefractionAmount: 0.1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _PointColor: {r: 0.28169012, g: 0, b: 1, a: 0.5529412}
+    - _PointColor: {r: 0.00126791, g: 0, b: 1, a: 0.5529412}
