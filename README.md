@@ -8,5 +8,8 @@ A single Unity example scene with a rippling shield shader for use on translucen
 "Custom/Shdr_Shield" \\
 "Custom/Shdr_Shield_Emissive"
 
+## Video
+### Click to watch on youtube
+
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/QE9thb1V6xA/0.jpg)](https://www.youtube.com/watch?v=QE9thb1V6xA&feature=share "Tie Fighter Shield Shader")
 
